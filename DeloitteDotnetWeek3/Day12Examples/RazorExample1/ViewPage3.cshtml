@@ -1,0 +1,70 @@
+﻿@using RazorExample1;
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+</head>
+<body>
+    <div>
+        @{ 
+            List<StudentInfo> lst = new List<StudentInfo>
+            {
+                new StudentInfo
+                {RollNo = 1,Name="Nikhil",Course="MSC",Brnach="CS",Semester=4,Aggregate=75.67,Grade='A' },
+
+                new StudentInfo
+                {RollNo = 2,Name="Arnav",Course="BSC",Brnach="ISE",Semester=8,Aggregate=67.34,Grade='B' },
+
+
+                new StudentInfo
+                {RollNo = 3,Name="Govindan",Course="BE",Brnach="ECE",Semester=2,Aggregate=89.3,Grade='A' },
+
+
+                new StudentInfo
+                {RollNo = 4,Name="Jayasuriya",Course="BE",Brnach="Mech",Semester=46,Aggregate=55.34,Grade='C' }
+
+            };
+        }    
+    </div>
+
+    <div>
+
+        <table border="1" style="background-color:hotpink; font-family:Arial;font-size:large">
+            <tr>
+                <th> Roll No</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Branch</th>
+                <th>Sem</th>
+                <th>Aggr</th>
+                <th>Grade</th>
+
+            </tr>
+
+            @foreach(var s in lst)
+            {
+                <tr>
+                    <td>@s.RollNo</td>
+                    <td>@s.Name</td>
+                    <td>@s.Course</td>
+                    <td>@s.Brnach</td>
+                    <td>@s.Semester</td>
+                    <td>@s.Aggregate</td>
+                    <td>@s.Grade</td>
+                </tr>
+            }
+
+
+
+        </table>
+
+
+    </div>
+</body>
+</html>

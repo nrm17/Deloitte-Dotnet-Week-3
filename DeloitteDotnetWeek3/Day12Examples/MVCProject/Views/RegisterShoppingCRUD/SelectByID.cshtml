@@ -1,0 +1,67 @@
+﻿
+@{
+    ViewBag.Title = "SelectByID";
+}
+
+<h2>SelectByID</h2>
+
+@using (Html.BeginForm())
+{
+    <div> <label> Select User Detail</label>
+    @Html.DropDownList("ddlid",Session["rsdata"] as SelectList)
+     
+    
+    
+    </div>
+
+    <div>
+        <input type="Submit" value="SelectByID" name="Command" />
+    </div>
+
+    if(ViewData["userdata"]!=null)
+    {
+        MVCProject.Models.RegisterShopping rs = (MVCProject.Models.RegisterShopping)ViewData["userdata"];
+
+        <div>
+            <label>Id:</label>
+            <input type="text" name="txtid" id="txtid" value="@rs.Id" readonly/>
+        </div>
+        <div>
+            <label>Name</label>
+            <input type="text" name="txtname" id="txtname" value="@rs.Name" readonly />
+        </div>
+
+        <div>
+            <label>Id:</label>
+            <input type="text" name="txtgender" id="txtgender" value="@rs.Gender" readonly />
+        </div>
+
+        <div>
+            <label>Id:</label>
+            <input type="text" name="txtmem" id="txtmem" value="@rs.Membership"  />
+        </div>
+
+
+        <div>
+            <label>Id:</label>
+            <input type="text" name="txtshop" id="txtshop" value="@rs.ShoppingPreference"  />
+        </div>
+
+        <div>
+            <label>Id:</label>
+            <input type="text" name="txtcod" id="txtcod" value="@rs.COD"  />
+        </div>
+
+        <div>
+            <label>Id:</label>
+            <input type="password" name="txtpass" id="txtpass" value="@rs.Password"  />
+        </div>
+
+
+        <input type="submit" value="Update" name="Command" />
+        <br />
+
+        <input type ="submit" value="Delete" name="Command" />
+    }
+}
+

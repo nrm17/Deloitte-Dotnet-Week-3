@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "InsertRegisterShopping";
+}
+
+<h2>InsertRegisterShopping</h2>
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)  // acts as a span tag and prints error message
+    <div>
+        <label>Enter Name</label>
+        @Html.TextBox("txtname")
+    </div>
+
+
+    <div>
+        <label>Select Gender</label>
+        @Html.RadioButton("gender","Male")Male
+        @Html.RadioButton("gender","Female")Female
+    </div>
+
+
+    <div>
+        <label>Select Membership</label>
+          @Html.DropDownList("ddlmember", new List<SelectListItem> { new SelectListItem { Text ="Free",Value="Free"}, new SelectListItem { Text="Paid" , Value="Paid"} },"Select")
+    </div>
+
+
+    <div>
+        <label>Select Shopping Preference</label>
+        <select id="Shop" name="Shop" multiple="multiple">
+           
+            <option value="Books">Books</option>
+            <option value="Cosmetic">Cosmetic</option>
+            <option value="Kitchenware">Kitchenware</option>
+            <option value="Mobiles">Mobiles</option>
+            <option value="Watch">Watch</option>
+            <option value="Electronics">Electronics</option>
+        </select>
+    </div>
+
+
+
+    <div>
+        <label>COD preferred ?</label>
+        @Html.CheckBox("cbcod",false)
+    </div>
+
+    <div>
+        <label>Enter Password</label>
+        @Html.Password("txtpass");
+    </div>
+
+    <div>
+        <input type="submit" value="Insert" /> 
+    </div>
+
+
+
+}
+@Html.ActionLink("Select All", "SelectAllRegisterShopping")
+
+<br />
+
+@Html.ActionLink("Select By Id","SelectByID")
+

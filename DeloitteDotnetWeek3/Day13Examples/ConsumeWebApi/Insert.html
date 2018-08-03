@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-1.10.2.js"></script>>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#b1").click(function () {
+                var obj = new Object();
+                obj.name = $("#txtname").val();
+                obj.status = $("#ddlstat").val();
+                alert(obj.name + " " + obj.status);
+                $.ajax({
+                    url: "http://localhost:65278/api/UserInfoAPI",
+                    method: 'Post',
+                    data: obj,
+                    success:function(data)
+                    {
+
+                        alert(data);
+                        if (data == true) {
+                            alert("Data Inserted");
+                        }
+                        else
+                        alert("Error in insertion");
+                    }
+                })
+
+            });
+        });
+    </script>
+
+</head>
+<body>
+    <div>
+        <label>Enter Name:</label>
+        <input type="text" id="txtname" />
+
+    </div>
+
+
+    <div>
+        <label>enter status</label>
+        <select id="ddlstat">
+                <option value="Active">Active</option>
+        <option value="Inactive">Inactive</option>
+        </select>
+    </div>
+    <div>
+        <button id="b1">Insert</button>
+    </div>
+
+</body>
+</html>

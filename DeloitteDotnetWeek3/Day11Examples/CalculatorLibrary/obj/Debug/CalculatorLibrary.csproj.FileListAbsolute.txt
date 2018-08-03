@@ -1,0 +1,5 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\CalculatorLibrary\bin\Debug\CalculatorLibrary.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\CalculatorLibrary\bin\Debug\CalculatorLibrary.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\CalculatorLibrary\obj\Debug\CalculatorLibrary.csprojResolveAssemblyReference.cache
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\CalculatorLibrary\obj\Debug\CalculatorLibrary.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\CalculatorLibrary\obj\Debug\CalculatorLibrary.pdb

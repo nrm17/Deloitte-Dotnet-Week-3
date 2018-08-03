@@ -1,0 +1,7 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\bin\Debug\Selfhosting.exe.config
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\bin\Debug\Selfhosting.exe
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\bin\Debug\Selfhosting.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\bin\Debug\CalculatorLibrary.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\bin\Debug\CalculatorLibrary.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\obj\Debug\Selfhosting.exe
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples\Selfhosting\obj\Debug\Selfhosting.pdb

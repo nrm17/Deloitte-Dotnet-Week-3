@@ -1,0 +1,7 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\bin\Debug\Day11AssignmentsFinal.dll.config
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\bin\Debug\Day11AssignmentsFinal.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\bin\Debug\Day11AssignmentsFinal.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\bin\Debug\EntityFramework.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\bin\Debug\EntityFramework.xml
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\obj\Debug\Day11AssignmentsFinal.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Day11AssignmentsFinal\obj\Debug\Day11AssignmentsFinal.pdb

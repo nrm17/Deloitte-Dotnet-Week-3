@@ -1,0 +1,8 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\bin\Debug\Client1.exe.config
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\bin\Debug\Client1.exe
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\bin\Debug\Client1.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\obj\Debug\Client1.Form1.resources
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\obj\Debug\Client1.Properties.Resources.resources
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\obj\Debug\Client1.csproj.GenerateResource.Cache
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\obj\Debug\Client1.exe
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11AssignmentsFinal\Client1\obj\Debug\Client1.pdb

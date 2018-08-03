@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewBag.Title = "Update";
+}
+
+<h2>Update</h2>
+
+@using (Html.BeginForm())  // control should be inside html.begon form
+{ 
+    if(Session["RSData"]!=null)
+    {
+        MVCProject.Models.RegisterShopping rs = (MVCProject.Models.RegisterShopping)Session["RSData"];
+
+        <div>
+            <label>Id :</label>
+            <input type="text" name="txtid" id="txtid" value="@rs.Id" readonly/>
+        </div>
+
+        <div>
+            <label>Membership:</label>
+            <input type="text" name="txtmem" id="txtmem" value="@rs.Membership" />
+        </div>
+
+        <div>
+            <label>Shopping Preference</label>
+            <input type="text" name="txtshop" id="txtshop" value="@rs.ShoppingPreference" />
+        </div>
+
+
+        <div>
+            <label>Cod</label>
+            <input type="text" name="txtcod" id="txtcod" value="@rs.COD" />
+        </div>
+
+    
+
+        <input type="submit" value="Update" />
+    }
+}
+

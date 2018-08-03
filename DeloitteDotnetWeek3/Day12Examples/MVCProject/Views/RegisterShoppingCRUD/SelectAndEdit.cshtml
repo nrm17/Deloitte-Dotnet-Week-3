@@ -1,0 +1,35 @@
+﻿@model IEnumerable<MVCProject.Models.RegisterShopping>
+@{
+    ViewBag.Title = "SelectAndEdit";
+}
+
+<h2>Select And Edit</h2>
+<table border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Gender</th>
+        <th>Membership</th>
+        <th>Shopping Preference</th>
+        <th>COD</th>
+        <th>Password</th>
+        <th>Edit</th>
+    </tr>
+
+    @foreach (var x in Model)
+    {
+        <tr>
+            <td>@x.Id</td>
+            <td>@x.Name</td>
+            <td>@x.Gender</td>
+            <td>@x.Membership</td>
+            <td>@x.ShoppingPreference</td>
+            <td>@x.COD</td>
+            <td>@x.Password</td>
+            <td>@Html.ActionLink("Edit" + @x.Id.ToString(), "Update", new  { ID = @x.Id.ToString() })</td> // only the row to be edited will be posted back to the table
+        </tr>
+    }
+</table>
+
+@Html.ActionLink("Insert New", "InsertRegisterShopping")
+

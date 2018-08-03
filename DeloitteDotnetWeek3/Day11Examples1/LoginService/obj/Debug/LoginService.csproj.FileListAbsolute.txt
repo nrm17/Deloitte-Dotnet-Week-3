@@ -1,0 +1,8 @@
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\bin\Debug\LoginService.dll.config
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\bin\Debug\LoginService.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\bin\Debug\LoginService.pdb
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\bin\Debug\EntityFramework.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\bin\Debug\EntityFramework.xml
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\obj\Debug\LoginService.csprojResolveAssemblyReference.cache
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\obj\Debug\LoginService.dll
+c:\users\nexwave\documents\visual studio 2015\Projects\Day11Examples1\LoginService\obj\Debug\LoginService.pdb

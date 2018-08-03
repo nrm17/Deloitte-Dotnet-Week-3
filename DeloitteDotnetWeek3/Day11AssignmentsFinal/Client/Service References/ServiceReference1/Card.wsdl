@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Card" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:57106/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:57106/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/System" />
+      <xsd:import schemaLocation="http://localhost:57106/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="ICard_Authenticate_InputMessage">
+    <wsdl:part name="parameters" element="tns:Authenticate" />
+  </wsdl:message>
+  <wsdl:message name="ICard_Authenticate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICard_Authenticate_ArgumentExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q1="http://schemas.datacontract.org/2004/07/System" name="detail" element="q1:ArgumentException" />
+  </wsdl:message>
+  <wsdl:message name="ICard_DateCheck_InputMessage">
+    <wsdl:part name="parameters" element="tns:DateCheck" />
+  </wsdl:message>
+  <wsdl:message name="ICard_DateCheck_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DateCheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICard_DateCheck_ArgumentExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q2="http://schemas.datacontract.org/2004/07/System" name="detail" element="q2:ArgumentException" />
+  </wsdl:message>
+  <wsdl:message name="ICard_Trans_InputMessage">
+    <wsdl:part name="parameters" element="tns:Trans" />
+  </wsdl:message>
+  <wsdl:message name="ICard_Trans_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TransResponse" />
+  </wsdl:message>
+  <wsdl:message name="ICard_Trans_ArgumentExceptionFault_FaultMessage">
+    <wsdl:part xmlns:q3="http://schemas.datacontract.org/2004/07/System" name="detail" element="q3:ArgumentException" />
+  </wsdl:message>
+  <wsdl:portType name="ICard">
+    <wsdl:operation name="Authenticate">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICard/Authenticate" message="tns:ICard_Authenticate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICard/AuthenticateResponse" message="tns:ICard_Authenticate_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICard/AuthenticateArgumentExceptionFault" name="ArgumentExceptionFault" message="tns:ICard_Authenticate_ArgumentExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DateCheck">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICard/DateCheck" message="tns:ICard_DateCheck_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICard/DateCheckResponse" message="tns:ICard_DateCheck_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICard/DateCheckArgumentExceptionFault" name="ArgumentExceptionFault" message="tns:ICard_DateCheck_ArgumentExceptionFault_FaultMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Trans">
+      <wsdl:input wsaw:Action="http://tempuri.org/ICard/Trans" message="tns:ICard_Trans_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/ICard/TransResponse" message="tns:ICard_Trans_OutputMessage" />
+      <wsdl:fault wsaw:Action="http://tempuri.org/ICard/TransArgumentExceptionFault" name="ArgumentExceptionFault" message="tns:ICard_Trans_ArgumentExceptionFault_FaultMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_ICard" type="tns:ICard">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Authenticate">
+      <soap:operation soapAction="http://tempuri.org/ICard/Authenticate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ArgumentExceptionFault">
+        <soap:fault use="literal" name="ArgumentExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="DateCheck">
+      <soap:operation soapAction="http://tempuri.org/ICard/DateCheck" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ArgumentExceptionFault">
+        <soap:fault use="literal" name="ArgumentExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="Trans">
+      <soap:operation soapAction="http://tempuri.org/ICard/Trans" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+      <wsdl:fault name="ArgumentExceptionFault">
+        <soap:fault use="literal" name="ArgumentExceptionFault" namespace="" />
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Card">
+    <wsdl:port name="BasicHttpBinding_ICard" binding="tns:BasicHttpBinding_ICard">
+      <soap:address location="http://localhost:57106/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

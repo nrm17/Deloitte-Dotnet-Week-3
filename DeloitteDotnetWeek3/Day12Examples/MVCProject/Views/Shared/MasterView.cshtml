@@ -1,0 +1,28 @@
+﻿<div style="background-color:darkmagenta;font-family:Arial;text-shadow:201px 12px 2px green">
+    <h1> Register Shopping MVC Application</h1>
+</div>
+
+    <div style="background-color:brown;font-family:Arial;color:darkblue;width:auto;height:auto">
+        <table border="1">
+            <tr>
+                <td>@Html.ActionLink("Insert New","InsertRegisterShopping","RegisterShoppingCRUD")</td>
+
+                <td>@Html.ActionLink("Select All","SelectAllRegisterShopping","RegisterShoppingCRUD")</td>
+
+                <td>@Html.ActionLink("Select By ID","SelectByID","RegisterShoppingCRUD")</td>
+
+                <td>@Html.ActionLink("Select and Edit","SelectAndEdit", "RegisterShoppingCRUD")</td>
+            </tr>
+
+
+        </table>
+
+
+
+
+</div>
+
+<div style="background-color:lightpink">
+    @RenderBody();
+
+</div>
